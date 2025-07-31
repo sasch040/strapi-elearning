@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_quiz_quiz_questions",
+  "info": {
+    "displayName": "Quiz Question",
+    "icon": "lightbulb"
+  },
+  "options": {},
+  "attributes": {
+    "frage": {
+      "type": "string"
+    },
+    "optionenquestion": {
+      "type": "component",
+      "component": "quiz.options",
+      "repeatable": true
+    }
+  },
+  "config": {}
+}

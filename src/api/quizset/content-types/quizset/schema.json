@@ -1,0 +1,31 @@
+{
+  "kind": "collectionType",
+  "collectionName": "quizsets",
+  "info": {
+    "singularName": "quizset",
+    "pluralName": "quizsets",
+    "displayName": "quizset"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "frage": {
+      "type": "string"
+    },
+    "auswahl": {
+      "type": "component",
+      "component": "quiz.antworten",
+      "repeatable": true
+    },
+    "module": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::module.module"
+    },
+    "order": {
+      "type": "integer"
+    }
+  }
+}

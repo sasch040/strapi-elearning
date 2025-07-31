@@ -1,0 +1,30 @@
+{
+  "kind": "collectionType",
+  "collectionName": "logos",
+  "info": {
+    "singularName": "logo",
+    "pluralName": "logos",
+    "displayName": "logo"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "bild": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "course": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::course.course"
+    }
+  }
+}

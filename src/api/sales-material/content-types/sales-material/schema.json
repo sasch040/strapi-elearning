@@ -1,0 +1,55 @@
+{
+  "kind": "collectionType",
+  "collectionName": "sales_materials",
+  "info": {
+    "singularName": "sales-material",
+    "pluralName": "sales-materials",
+    "displayName": "Sales Material"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "type": {
+      "type": "enumeration",
+      "enum": [
+        "pdf",
+        "presentation",
+        "cheat-sheet",
+        "flyer"
+      ]
+    },
+    "category": {
+      "type": "enumeration",
+      "enum": [
+        "brochure",
+        "presentation",
+        "cheat-sheet",
+        "flyer"
+      ]
+    },
+    "file": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "product": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::product.product",
+      "inversedBy": "sales_materials"
+    }
+  }
+}

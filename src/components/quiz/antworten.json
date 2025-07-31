@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_quiz_antworten_s",
+  "info": {
+    "displayName": "antworten "
+  },
+  "options": {},
+  "attributes": {
+    "antwort": {
+      "type": "string"
+    },
+    "isCorrect": {
+      "type": "boolean",
+      "required": true,
+      "default": false
+    }
+  },
+  "config": {}
+}

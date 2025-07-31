@@ -1,0 +1,36 @@
+{
+  "kind": "collectionType",
+  "collectionName": "authorized_users",
+  "info": {
+    "singularName": "authorized-user",
+    "pluralName": "authorized-users",
+    "displayName": "Authorized User"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "email": {
+      "type": "email",
+      "required": true,
+      "unique": true
+    },
+    "isActive": {
+      "type": "boolean",
+      "default": true
+    },
+    "role": {
+      "type": "enumeration",
+      "enum": [
+        "partner",
+        "admin",
+        "test",
+        "intern"
+      ]
+    },
+    "lastLogin": {
+      "type": "datetime"
+    }
+  }
+}

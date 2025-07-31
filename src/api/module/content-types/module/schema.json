@@ -1,0 +1,43 @@
+{
+  "kind": "collectionType",
+  "collectionName": "modules",
+  "info": {
+    "singularName": "module",
+    "pluralName": "modules",
+    "displayName": "Module"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "order": {
+      "type": "integer"
+    },
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "videoTitle": {
+      "type": "string"
+    },
+    "videoUrl": {
+      "type": "string"
+    },
+    "duration": {
+      "type": "string"
+    },
+    "completed": {
+      "type": "boolean",
+      "default": false
+    },
+    "course": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::course.course",
+      "inversedBy": "modules"
+    }
+  }
+}
