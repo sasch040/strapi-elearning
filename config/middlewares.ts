@@ -5,7 +5,7 @@ export default [
     name: 'strapi::cors',
     config: {
       enabled: true,
-      origin: [*], // ⬅️ HIER DEINE URL EINFÜGEN
+      origin: "*", // ⬅️ HIER DEINE URL EINFÜGEN
       headers: ['Content-Type', 'Authorization'],
       methods: ['GET', 'POST', 'PUT', 'DELETE', 'PATCH'],
       credentials: true,
