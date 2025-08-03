@@ -6,7 +6,7 @@ export default [
     config: {
       enabled: true,
       origin: '*', // ⬅️ HIER DEINE URL EINFÜGEN
-      headers: ['Content-Type', 'Authorization'],
+      headers: '*',
       methods: ['GET', 'POST', 'PUT', 'DELETE', 'PATCH'],
       credentials: true,
     },
