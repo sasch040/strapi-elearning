@@ -1,8 +1,17 @@
 export default [
   'strapi::logger',
   'strapi::errors',
+  {
+    name: 'strapi::cors',
+    config: {
+      enabled: true,
+      origin: ['https://deine-frontend-domain.vercel.app'], // ⬅️ HIER DEINE URL EINFÜGEN
+      headers: ['Content-Type', 'Authorization'],
+      methods: ['GET', 'POST', 'PUT', 'DELETE', 'PATCH'],
+      credentials: true,
+    },
+  },
   'strapi::security',
-  'strapi::cors',
   'strapi::poweredBy',
   'strapi::query',
   'strapi::body',
