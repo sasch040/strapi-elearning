@@ -19,6 +19,7 @@ module.exports = ({ env }) => ({
       providerOptions: {
         host: 'in-v3.mailjet.com',
         port: 587,
+        secure: false,
         auth: {
           user: '9e756c0f01ecb0e9935e77f28cd54aea1',
           pass: '0fab5d60571c96d4240db92a62cfb1da',
