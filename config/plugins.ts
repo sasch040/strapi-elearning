@@ -21,8 +21,8 @@ module.exports = ({ env }) => ({
         port: 587,
         secure: false,
         auth: {
-          user: '9e756c0f01ecb0e9935e77f28cd54aea1',
-          pass: '0fab5d60571c96d4240db92a62cfb1da',
+          user: '9c598aa604d1cbc3b118911c13b1e5fe',
+          pass: '15f595961713b2bd6593aebbef13d788',
         },
       },
       settings: {
