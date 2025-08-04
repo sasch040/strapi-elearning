@@ -28,7 +28,15 @@ module.exports = ({ env }) => ({
       settings: {
         defaultFrom: 'salesacademy@outlook.de',
         defaultReplyTo: 'salesacademy@outlook.de',
+	response_email: 'salesacademy@outlook.de',
       },
     },
   },
 });
+users_permissions: {
+  config: {
+    email_confirmation: {
+      URL: process.env.APP_URL || 'https://strapi-elearning-8rff.onrender.com',
+    },
+  },
+},
