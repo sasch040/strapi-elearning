@@ -32,11 +32,11 @@ module.exports = ({ env }) => ({
       },
     },
   },
-});
-users_permissions: {
-  config: {
-    email_confirmation: {
-      URL: process.env.APP_URL || 'https://strapi-elearning-8rff.onrender.com',
+  'users-permissions': {
+    config: {
+      email_confirmation: {
+        URL: env('APP_URL', 'https://strapi-elearning-8rff.onrender.com'),
+      },
     },
   },
-},
+});
