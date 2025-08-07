@@ -4,8 +4,7 @@ export default [
   {
     name: 'strapi::cors',
     config: {
-      enabled: true,
-      origin: '*', // ⬅️ HIER DEINE URL EINFÜGEN
+      origin: 'https://v0-e-learning-platform-design-seven.vercel.app', // ⚠️ für Production besser: ['https://deine-vercel-domain.app']
       headers: '*',
       methods: ['GET', 'POST', 'PUT', 'DELETE', 'PATCH'],
       credentials: true,
@@ -18,4 +17,4 @@ export default [
   'strapi::session',
   'strapi::favicon',
   'strapi::public',
-];
+]
