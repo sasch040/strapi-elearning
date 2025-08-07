@@ -3,9 +3,11 @@ module.exports = ({ env }) => ({
     config: {
       provider: 'aws-s3',
       providerOptions: {
-        accessKeyId: env('AWS_ACCESS_KEY_ID'),
-        secretAccessKey: env('AWS_SECRET_ACCESS_KEY'),
-        region: env('AWS_REGION'),
+        s3Options: {
+          accessKeyId: env('AWS_ACCESS_KEY_ID'),
+          secretAccessKey: env('AWS_SECRET_ACCESS_KEY'),
+          region: env('AWS_REGION'),
+        },
         params: {
           Bucket: env('AWS_BUCKET'),
         },
@@ -28,10 +30,11 @@ module.exports = ({ env }) => ({
       settings: {
         defaultFrom: 'salesacademy@outlook.de',
         defaultReplyTo: 'salesacademy@outlook.de',
-	response_email: 'salesacademy@outlook.de',
+        response_email: 'salesacademy@outlook.de',
       },
     },
   },
+
   'users-permissions': {
     config: {
       email_confirmation: {
@@ -39,4 +42,4 @@ module.exports = ({ env }) => ({
       },
     },
   },
-});
+})
