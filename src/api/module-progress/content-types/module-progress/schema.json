@@ -13,22 +13,25 @@
   "attributes": {
     "module": {
       "type": "relation",
-      "relation": "oneToOne",
+      "relation": "manyToOne",
       "target": "api::module.module"
     },
     "users_permissions_user": {
       "type": "relation",
-      "relation": "oneToOne",
+      "relation": "manyToOne",
       "target": "plugin::users-permissions.user"
     },
     "videoWatched": {
-      "type": "boolean"
+      "type": "boolean",
+      "default": false
     },
     "quizCompleted": {
-      "type": "boolean"
+      "type": "boolean",
+      "default": false
     },
     "completed": {
-      "type": "boolean"
+      "type": "boolean",
+      "default": false
     }
   }
 }
